@@ -17,7 +17,7 @@ struct DailyForecastView: View {
     @State private var loc:CLLocationCoordinate2D?
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack {
                 Picker("", selection: $unit) {
                     Text("°C")
@@ -73,7 +73,7 @@ struct DailyForecastView: View {
                     Spacer()
                 }
             }
-            .navigationTitle("Daily Weather Forecast")
+//            .navigationBarTitle("Daily Weather Forecast")
             .onReceive(locationManager.$location) { loc in
                 self.loc = loc
                 Task {
@@ -86,7 +86,7 @@ struct DailyForecastView: View {
             //                    await manager.getFiveDayForecast(unit: self.unit)
             //                }
             //            }
-        }
+//        }
     }
 }
 

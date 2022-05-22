@@ -16,7 +16,7 @@ struct ContentView: View {
                 }
             SearchView()
                 .tabItem {
-                    Label("Current", systemImage: "magnifyingglass")
+                    Label("Search", systemImage: "magnifyingglass")
                 }
             DailyForecastView()
                 .tabItem {
